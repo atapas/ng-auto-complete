@@ -9,7 +9,7 @@
     <div style="float:left;clear:both">
         <div class="input-field col s12">
             <label for="movies">How many have you seen?</label>
-            <input id="movies" type="text" class="validate filter-input" [(ngModel)]=query (keyup)=filter($event)>
+            <input id="movies" type="text" class="validate filter-input" [(ngModel)]=query (keyup)=filter($event) (focus)=filter($event)>
         </div>
         
         <div class="suggestions" *ngIf="filteredList.length > 0">
