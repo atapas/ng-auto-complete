@@ -44,7 +44,7 @@ export class AutoCompleteComponent implements OnInit {
 
   public select(item) {
     this.selected.push(item);
-    this.query = item;
+    this.query = '';
     this.filteredList = [];
     this.selectedIdx = -1;
   }
@@ -66,8 +66,8 @@ export class AutoCompleteComponent implements OnInit {
 
   public handleEnter() {
     if (this.selectedIdx > -1) {
-      this.query = this.filteredList[this.selectedIdx];
-      this.selected.push(this.query);
+      this.query = '';
+      this.selected.push(this.filteredList[this.selectedIdx]);
     }
     this.filteredList = [];
     this.selectedIdx = -1;
