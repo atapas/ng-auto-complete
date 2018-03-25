@@ -1,3 +1,21 @@
-<app-auto-complete [data]="movies"></app-auto-complete>
+<div class="container">
+    <H2>Try out ng Auto Complete, Single Selection</H2>               
+    <app-auto-complete
+        [multi] = false
+        [data] = "countries" 
+        [placeHolder] = "singlePlaceHolder" 
+        [label] = "singLeLabel">
+    </app-auto-complete>
+</div>
+
+<div class="container">
+    <H2>How many have you seen? Keep Typing...(Multi Selection)</H2>
+    <app-auto-complete
+        [multi] = true
+        [data] = "movies" 
+        [placeHolder] = "multiPlaceHolder" 
+        [label] = "multiLeLabel">
+    </app-auto-complete>
+</div>
 
 

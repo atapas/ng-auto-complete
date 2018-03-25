@@ -16,6 +16,9 @@ export class AutoCompleteComponent implements OnInit {
   private selectedIdx: number;
   public selected = [];
   @Input() public data = [];
+  @Input() public label = 'Enter Something';
+  @Input() public placeHolder = '';
+  @Input() public multi: boolean = false;
 
   constructor(myElemenetRef: ElementRef) { 
     this.elementRef = myElemenetRef;
@@ -44,7 +47,11 @@ export class AutoCompleteComponent implements OnInit {
 
   public select(item) {
     this.selected.push(item);
-    this.query = '';
+    if (this.multi) {
+      this.query = '';
+    } else {
+      this.query = item;
+    }
     this.filteredList = [];
     this.selectedIdx = -1;
   }
@@ -66,8 +73,12 @@ export class AutoCompleteComponent implements OnInit {
 
   public handleEnter() {
     if (this.selectedIdx > -1) {
-      this.query = '';
-      this.selected.push(this.filteredList[this.selectedIdx]);
+      if (this.multi) {
+        this.query = '';
+      } else {
+        this.query = this.filteredList[this.selectedIdx];
+      }      
+      this.selected.push(this.query);
     }
     this.filteredList = [];
     this.selectedIdx = -1;
