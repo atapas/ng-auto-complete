@@ -29,12 +29,14 @@ where,
 For Dev mode, Clone the project and do:
 * npm install
 * ng serve
+
 You can access the app on `localhost:4200`
 
 #### Production
 For Production mode, clone the project and do:
 * npm install
 * npm start
+
 It will create the dist folder for you to deploy and run the demo.
 
 ## Demo
