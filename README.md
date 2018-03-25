@@ -1,7 +1,7 @@
 # ng-auto-complete
 
 ## Introduction
-UI Component built using Angular to Perform Autocomplete(Single and Multi-Select)
+`ng-auto-complete` is the UI Component built using Angular to Perform Auto complete(Single and Multi-Select) operation.
 The Source Code is inspired from the blog written here, with few improvements on top of it: http://4dev.tech/2016/03/tutorial-creating-an-angular2-autocomplete/
 
 ## About
