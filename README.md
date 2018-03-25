@@ -22,6 +22,21 @@ where,
 * multi - An optional attribute to define if the component should support multi selection. It is single selection by default.
 * placeHolder - An optional attribute to define the place holder text for the auto complete component.
 * label - An optional attribute to define the label for the auto complete component.
+
+### Build
+
+#### Dev
+For Dev mode, Clone the project and do:
+* npm install
+* ng serve
+You can access the app on `localhost:4200`
+
+#### Production
+For Production mode, clone the project and do:
+* npm install
+* npm start
+It will create the dist folder for you to deploy and run the demo.
+
 ## Demo
 See the demo here: https://ng-auto-complete.herokuapp.com/
 
