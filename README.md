@@ -42,4 +42,7 @@ It will create the dist folder for you to deploy and run the demo.
 ## Demo
 See the demo here: https://ng-auto-complete.herokuapp.com/
 
+## Contact
+Tapas Adhikary (tapas.adhikary@gmail.com)
+
 
